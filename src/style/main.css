@@ -92,6 +92,12 @@ body {
 }
 .header a {
 	font-family: din-light;
+	color: #707070;
+}
+
+.header h2 {
+	font-size: 24px;
+
 }
 
 
@@ -102,6 +108,7 @@ body {
 	padding: 0 0 100px;
 	position: relative;
 	background: rgba(50, 50, 150, 0.3)
+	
 }
 .middle:after {
 	display: table;
@@ -116,8 +123,40 @@ body {
 }
 .content {
 	padding: 0 0 0 220px;
+	font-family: din-cyr;
+	font-size: 11px;
+	/* position: relative; */
+}
+.content h4 {
+	font-size: 18px;
+	/* line-height: 38px; */
+	text-transform: uppercase;
+	padding-bottom: 20px;
 }
 
+.content span {
+	display: block;
+	padding-bottom: 10px;
+}
+
+.content .teammates {
+	/* position: absolute; */
+	/* top: 0; */
+	display: inline-block;
+	width: 33%;
+}
+
+.teammate .photo {
+	display: inline-block;
+	height: 78px;
+	width: auto;
+	overflow: hidden;
+	text-align: right;
+}
+
+.teammate .fio {
+	display: inline-block;
+}
 
 /* Left Sidebar
 -----------------------------------------------------------------------------*/
@@ -126,7 +165,25 @@ body {
 	width: 200px;
 	margin-left: -100%;
 	position: relative;
-	background: rgba(50, 150, 50, 0.3);
+	/* background: rgba(50, 150, 50, 0.3); */
+}
+
+.left-sidebar .category {
+	display: block;
+	/* box-sizing: content-box; */
+}
+
+.left-sidebar a {
+	font-family: din-cyr;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #363636;
+	font-size: 40px;
+}
+
+.left-sidebar a:hover {
+	background-color: #707070;
+	color: ghostwhite;
 }
 
 
@@ -143,6 +200,13 @@ body {
 @font-face {
 	font-family: "din-light";
 	src: url(../fonts/DIN\ LightAlternate\ Regular.otf);
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "din-cyr";
+	src: url(../fonts/dincyr-regular.ttf);
 	font-style: normal;
 	font-weight: normal;
 }
