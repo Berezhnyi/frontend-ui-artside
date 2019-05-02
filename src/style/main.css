@@ -51,11 +51,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 	display: block;
 }
 body {
-	font: 12px/18px Arial, sans-serif;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	/* font: 12px/18px Arial, sans-serif; */
 	width: 100%;
 	height: 100%;
 	/* opacity: 0.1; */
-	background-image: url(../gallery/bckgrnd.jpg);
+	background-image: url(../img/bg-body.jpg);
 	/* background-color: rgba(100, 10, 10, 0.5) */
 }
 .wrapper {
@@ -71,7 +72,26 @@ body {
 -----------------------------------------------------------------------------*/
 .header {
 	height: 150px;
-	background: rgba(100, 50, 50, 0.5);
+	/* background: rgba(100, 50, 50, 0.5); */
+	position: relative;
+}
+
+.header .logo {
+	position: absolute;
+	top: 45px;
+	left: 10px;
+	/* margin-top: 45px; */
+	/* align: left; */
+}
+.header .tel {
+	position: absolute;
+	top: 45px;
+	right: 10px;
+	/* align: right; */
+	text-decoration: none;
+}
+.header a {
+	font-family: din-light;
 }
 
 
@@ -118,4 +138,11 @@ body {
 	height: 100px;
 	background: rgba(100, 100, 100, 0.5);
 	position: relative;
+}
+
+@font-face {
+	font-family: "din-light";
+	src: url(../fonts/DIN\ LightAlternate\ Regular.otf);
+	font-style: normal;
+	font-weight: normal;
 }
