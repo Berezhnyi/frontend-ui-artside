@@ -128,6 +128,7 @@ body {
 	font-size: 11px;
 	/* position: relative; */
 	line-height: normal;
+	margin-bottom: 40px;
 }
 .content h4 {
 	font-size: 18px;
@@ -152,15 +153,17 @@ body {
 
 .teammate .photo {
 	display: inline-block;
-	/* height: 78px; */
-	/* width: auto; */
 	overflow: hidden;
-	text-align: right;
-	width: 45%;
+	width: 78px;
+	height: 78px;
+	font-size: 0;
+
 }
 
 .teammate .photo img {
-	height: 78px;
+	display: block;
+	margin: auto;
+	height: 100%;
 	width: auto;
 }
 
@@ -169,6 +172,14 @@ body {
 	vertical-align: top;
 	width: 45%;
 	padding-left: 10px;
+}
+
+.teammate {
+	margin-bottom: 20px;
+}
+
+.teammate:hover {
+	background-color: #fff;
 }
 
 .content h6 {
