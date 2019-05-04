@@ -1,4 +1,4 @@
-Eric Meyer's CSS Reset
+/* Eric Meyer's CSS Reset
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -18,7 +18,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-}
+} */
 /* HTML5 display-role reset for older browsers */
 /* article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -61,19 +61,22 @@ table {
 html {
 	height: 100%;
 }
+
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
 	display: block;
 }
+
+p, h1, h2, h3, h4 {
+	margin: 0;
+}
+
 body {
-	/* font-family: Verdana, Geneva, Tahoma, sans-serif; */
-	/* font: 12px/18px Arial, sans-serif; */
 	font-family: din-cyr;
 	width: 100%;
 	height: 100%;
-	/* opacity: 0.1; */
 	background-image: url(../img/bg-body.jpg);
-	/* background-color: rgba(100, 10, 10, 0.5) */
 }
+
 .wrapper {
 	width: 1000px;
 	margin: 0 auto;
@@ -82,12 +85,10 @@ body {
 	height: 100%;
 }
 
-
 /* Header
 -----------------------------------------------------------------------------*/
 .header {
 	height: 150px;
-	/* background: rgba(100, 50, 50, 0.5); */
 	position: relative;
 }
 
@@ -95,18 +96,17 @@ body {
 	position: absolute;
 	top: 45px;
 	left: 10px;
-	/* margin-top: 45px; */
-	/* align: left; */
 }
 .header .tel {
 	position: absolute;
 	top: 45px;
 	right: 10px;
-	/* align: right; */
 	text-decoration: none;
 }
 .header a {
 	font-family: din-light;
+	font-size: 18px;
+	line-height: 24px;
 	color: #707070;
 }
 
@@ -115,41 +115,41 @@ body {
 
 }
 
-
 /* Middle
 -----------------------------------------------------------------------------*/
 .middle {
 	width: 100%;
 	padding: 0 0 100px;
 	position: relative;
-	/* background: rgba(50, 50, 150, 0.3) */
-	/* margin-bottom: 55px; */
-	
 }
+
 .middle:after {
 	display: table;
 	clear: both;
 	content: '';
 }
+
 .container {
 	width: 100%;
 	float: left;
 	overflow: hidden;
-	/* background: rgba(150, 50, 150, 0.3) */
 }
+
 .content {
 	padding: 0 0 0 220px;
 	font-family: din-cyr;
 	font-size: 11px;
-	/* position: relative; */
 	line-height: normal;
-	margin-bottom: 40px;
 }
-.content h4 {
+.subject h2 {
 	font-size: 18px;
-	/* line-height: 38px; */
 	text-transform: uppercase;
 	padding-bottom: 20px;
+	font-weight: lighter;
+}
+
+.content .subject{
+	padding-bottom: 40px;
 }
 
 .content span {
@@ -157,44 +157,64 @@ body {
 	padding-bottom: 10px;
 }
 
-.content .teammates {
-	/* position: absolute; */
-	/* top: 0; */
+.subject .teammates {
 	display: inline-block;
 	width: 30%;
 	vertical-align: top;
 	padding-right: 10px;
 }
 
-.teammate .photo {
+.teammate .img-container {
+	display: inline-block;
+	width: 78px;
+	height: 78px;
+	overflow: hidden;
+}
+
+.img-container .photo {
+	width: 78px;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+/* .teammate .photo {
 	display: inline-block;
 	overflow: hidden;
 	width: 78px;
 	height: 78px;
 	font-size: 0;
 
-}
+} */
 
-.teammate .photo img {
+/* .teammate .photo img {
 	display: block;
 	margin: auto;
 	height: 100%;
 	width: auto;
-}
+} */
 
 .teammate .fio {
 	display: inline-block;
 	vertical-align: top;
-	width: 45%;
+	width: 51%;
 	padding-left: 10px;
+	overflow-wrap: break-word;
 }
 
 .teammate {
 	margin-bottom: 20px;
 }
 
-.content b {
-	/* display: inline; */
+.subject .subject-content {
+	padding-bottom: 10px;
+}
+
+.subject p {
+	padding-bottom: 10px;
+}
+
+.subject b {
 	font-weight: bold;
 }
 
@@ -205,12 +225,10 @@ body {
 	width: 200px;
 	margin-left: -100%;
 	position: relative;
-	/* background: rgba(50, 150, 50, 0.3); */
 }
 
 .left-sidebar .category {
 	display: block;
-	/* box-sizing: content-box; */
 }
 
 .left-sidebar a {
@@ -234,7 +252,6 @@ body {
 	width: 1000px;
 	margin: -100px auto 0;
 	height: 100px;
-	/* background: rgba(100, 100, 100, 0.5); */
 	position: relative;
 	font-size: 11px;
 }
