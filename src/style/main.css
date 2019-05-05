@@ -258,7 +258,7 @@ body {
 
 .footer .copyright {
 	display: inline-block;
-	padding-top: 40px;
+	padding-top: 30px;
 	width: 110px;
 	line-height: 15px;
 }
@@ -267,7 +267,7 @@ body {
 	text-decoration: none;
 	display: inline-block;
 	color: #363636;
-	padding-top: 40px;
+	padding-top: 30px;
 	vertical-align: top;
 }
 
