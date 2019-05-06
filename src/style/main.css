@@ -45,14 +45,14 @@ table {
 /* End of Eric Meyer's CSS Reset */
 
 @font-face {
-	font-family: "din-light";
+	font-family: 'din-light';
 	src: url(../fonts/DIN\ LightAlternate\ Regular.otf);
 	font-style: normal;
 	font-weight: normal;
 }
 
 @font-face {
-	font-family: "din-cyr";
+	font-family: 'din-cyr';
 	src: url(../fonts/dincyr-regular.ttf);
 	font-style: normal;
 	font-weight: normal;
@@ -86,7 +86,7 @@ body {
 }
 
 /* Header
------------------------------------------------------------------------------*/
+----------------------------------------------------------------------------- */
 .header {
 	height: 150px;
 	position: relative;
@@ -97,12 +97,14 @@ body {
 	top: 45px;
 	left: 10px;
 }
+
 .header .tel {
 	position: absolute;
 	top: 45px;
 	right: 10px;
 	text-decoration: none;
 }
+
 .header a {
 	font-family: din-light;
 	font-size: 18px;
@@ -112,18 +114,17 @@ body {
 
 .header .number {
 	font-size: 24px;
-
 }
 
 /* Middle
------------------------------------------------------------------------------*/
+----------------------------------------------------------------------------- */
 .middle {
 	width: 100%;
 	padding: 0 0 100px;
 	position: relative;
 }
 
-.middle:after {
+.middle::after {
 	display: table;
 	clear: both;
 	content: '';
@@ -141,6 +142,7 @@ body {
 	font-size: 11px;
 	line-height: normal;
 }
+
 .subject h2 {
 	font-size: 18px;
 	text-transform: uppercase;
@@ -148,7 +150,7 @@ body {
 	font-weight: lighter;
 }
 
-.content .subject{
+.content .subject {
 	padding-bottom: 40px;
 }
 
@@ -219,7 +221,7 @@ body {
 }
 
 /* Left Sidebar
------------------------------------------------------------------------------*/
+----------------------------------------------------------------------------- */
 .left-sidebar {
 	float: left;
 	width: 200px;
@@ -241,12 +243,12 @@ body {
 
 .left-sidebar a:hover {
 	background-color: #707070;
-	color: #ffffff;
+	color: #fff;
 }
 
 
 /* Footer
------------------------------------------------------------------------------*/
+----------------------------------------------------------------------------- */
 .footer {
 	border-top: 1px solid #a7a7a7;
 	width: 1000px;
