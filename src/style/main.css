@@ -225,6 +225,7 @@ body {
 	width: 200px;
 	margin-left: -100%;
 	position: relative;
+	font-family: din-cyr;
 }
 
 .left-sidebar .category {
@@ -232,7 +233,6 @@ body {
 }
 
 .left-sidebar a {
-	font-family: din-cyr;
 	text-transform: uppercase;
 	text-decoration: none;
 	color: #363636;
@@ -241,7 +241,7 @@ body {
 
 .left-sidebar a:hover {
 	background-color: #707070;
-	color: ghostwhite;
+	color: #ffffff;
 }
 
 
